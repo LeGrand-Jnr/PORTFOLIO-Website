@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Web & Graphic Designer + Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+   <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header>
+    <h1>Hi, I'm Samuel O. Nartey</h1>
+    <div class="typewriter" id="typewriter"></div>
+    <p>A creative with a passion for design and data.</p>
+    <button class="btn" onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })">View Portfolio</button>
+  </header>
+
+  <!-- ABOUT ME -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=100&h=100&facepad=2" alt="Alex Doe Profile Photo" style="border-radius:50%; box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+    <p>I’m a web and graphic designer who also loves diving into data. I use both my creative and analytical sides to build meaningful digital experiences.</p>
+    <button class="btn" onclick="toggleMoreInfo()">More Info</button>
+    <div class="more-info" id="moreInfo">
+      <p>I have 3+ years of experience designing responsive websites, brand assets, and building data dashboards that drive insights.</p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <h2>My Work</h2>
+    <div class="portfolio-category">
+      <h3>Web Design</h3>
+      <div class="portfolio">
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="E-commerce Website Redesign" style="width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+          <h4>Website Design</h4>
+          <p>Designed a sports e-commerce site with my team using HTML, CSS, and JavaScript.</p>
+          <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Portfolio Website" style="width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+          <h4>Portfolio Website</h4>
+          <p>Designed and developed a personal portfolio site to showcase skills and projects.</p>
+          <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+      <div style="text-align:right; margin-top:1rem;">
+        <a href="web-design.html" class="btn">See More</a>
+      </div>
+    </div>
+    <div class="portfolio-category">
+      <h3>Data Analysis</h3>
+      <div class="portfolio">
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Marketing Dashboard Project" style="width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+          <h4>Marketing Dashboard</h4>
+          <p>Built a dynamic dashboard to visualize campaign performance.</p>
+          <p><strong>Tools:</strong>Excel</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Sales Data Insights" style="width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+          <h4>Sales Data Insights</h4>
+          <p>Analyzed sales data to uncover trends and actionable insights for business growth.</p>
+          <p><strong>Tools:</strong> Python, Power BI</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+      <div style="text-align:right; margin-top:1rem;">
+        <a href="data-analysis.html" class="btn">See More</a>
+      </div>
+    </div>
+    <div class="portfolio-category">
+      <h3>Graphic Design</h3>
+      <div class="portfolio">
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Brand Identity" style="width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+          <h4>Brand Identity</h4>
+          <p>Created a cohesive brand identity for a startup, including logo and marketing materials.</p>
+          <p><strong>Tools:</strong>Photoshop</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1465101178521-c1a4c8a0f8f9?auto=format&fit=crop&w=600&q=80" alt="Social Media Graphics" style="width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+          <h4>Social Media Graphics</h4>
+          <p>Designed engaging graphics for social media campaigns to boost brand awareness.</p>
+          <p><strong>Tools:</strong> Canva, Photoshop</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+      <div style="text-align:right; margin-top:1rem;">
+        <a href="graphic-design.html" class="btn">See More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <div>
+      <h3>Web Design</h3>
+      <p>UX/UI, responsive design, HTML/CSS prototyping</p>
+    </div>
+    <div>
+      <h3>Graphic Design</h3>
+      <p>Branding, logo design, flyers and marketing assets</p>
+    </div>
+    <div>
+      <h3>Data Analysis</h3>
+      <p>Dashboards, reporting, and actionable insights</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p>Connect with me: 
+      <a href="#">LinkedIn</a> | 
+      <a href="#">GitHub</a> | 
+      <a href="#">WhatsApp</a> |
+      <a href="#">TikTok</a> |
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Alex Doe. All rights reserved.</p>
+    <h3>Thanks for visiting my site.</h3>
+  </footer>
+
+
+</body>
+</html>

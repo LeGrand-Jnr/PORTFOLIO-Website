@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graphic Design Projects | Alex Doe</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Graphic Design Projects</h1>
+    <a href="index.html" class="btn">Back to Portfolio</a>
+    <button id="modeToggle" class="btn" style="float:right;">Dark Mode</button>
+  </header>
+  <section id="portfolio">
+    <h2>Featured Graphic Designs</h2>
+    <div style="margin-bottom:1.5rem;">
+      <label for="filterBar"><strong>Filter by Type:</strong></label>
+      <select id="filterBar" class="btn" style="margin-left:0.5rem;">
+        <option value="all">All</option>
+        <option value="logo">Logo</option>
+        <option value="poster">Poster</option>
+        <option value="card">Card</option>
+        <option value="infographic">Infographic</option>
+        <option value="brand">Brand</option>
+        <option value="social">Social Media</option>
+        <option value="brochure">Brochure</option>
+        <option value="magazine">Magazine</option>
+        <option value="flyer">Flyer</option>
+        <option value="packaging">Packaging</option>
+      </select>
+    </div>
+    <div class="portfolio">
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Brand Identity">
+        <h4>Brand Identity</h4>
+        <p>Created a cohesive brand identity for a startup, including logo and marketing materials.</p>
+        <p><strong>Tools:</strong> Illustrator, Photoshop</p>
+        <!-- data-type for filtering -->
+        <span style="display:none" data-type="brand"></span>
+      </div>
+      <div class="project">
+        <img src="images\Furniture.jpg" alt="Social Media Graphics">
+        <h4>Social Media Graphics</h4>
+        <p>Designed engaging graphics for a furniture company.</p>
+        <p><strong>Tools:</strong> Canva, Photoshop</p>
+        <span style="display:none" data-type="social"></span>
+      </div>
+      <div class="project">
+        <img src="images\Real Estate 1.jpg" alt="Event Poster">
+        <h4>Real Estate Flyer</h4>
+        <p>Designed a vibrant flyer for a real estate agency.</p>
+        <p><strong>Tools:</strong> Photoshop</p>
+        <span style="display:none" data-type="poster"></span>
+      </div>
+      <div class="project">
+        <img src="images\Thrift Store.jpg" alt="Infographic">
+        <h4>Social Media Flyer</h4>
+        <p>Created a social media flyer for a customer who sells thrifts .</p>
+        <p><strong>Tools:</strong> Photoshop</p>
+        <span style="display:none" data-type="social"></span>
+      </div>
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Business Card">
+        <h4>Business Card</h4>
+        <p>Designed a modern business card for a professional client.</p>
+        <p><strong>Tools:</strong> Photoshop, Illustrator</p>
+        <span style="display:none" data-type="card"></span>
+      </div>
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Brochure">
+        <h4>Brochure</h4>
+        <p>Created a tri-fold brochure for a marketing campaign.</p>
+        <p><strong>Tools:</strong> InDesign, Illustrator</p>
+        <span style="display:none" data-type="brochure"></span>
+      </div>
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Logo Design">
+        <h4>Logo Design</h4>
+        <p>Designed a unique logo for a new brand.</p>
+        <p><strong>Tools:</strong> Illustrator, Figma</p>
+        <span style="display:none" data-type="logo"></span>
+      </div>
+      <div class="project">
+        <img src="images\Dr. Birthday.jpg" alt="Magazine Cover">
+        <h4>Birthday Flyer</h4>
+        <p>Designed a birthday flyer.</p>
+        <p><strong>Tools:</strong> Photoshop</p>
+        <span style="display:none" data-type="social"></span>
+      </div>
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Flyer">
+        <h4>Flyer</h4>
+        <p>Created a promotional flyer for a product launch.</p>
+        <p><strong>Tools:</strong> Illustrator, Photoshop</p>
+        <span style="display:none" data-type="flyer"></span>
+      </div>
+      <div class="project">
+        <img src="images\Scanty Birks.jpg" alt="Packaging Design">
+        <h4>Packaging Design</h4>
+        <p>Designed a flyer for a client's footwear shop.</p>
+        <p><strong>Tools:</strong> Photoshop</p>
+        <span style="display:none" data-type="flyer"></span>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="testimonial-slider" style="margin:2rem 0; text-align:center;">
+      <h3>Testimonials</h3>
+      <div class="testimonial" style="display:block;">
+        <p>"Samuel's designs elevated my brand and made our marketing stand out! He delivered on time and wowed us with his brilliance and expertise."</p>
+        <strong>- Mr. Benjamin Otoo Tetteh</strong>
+      </div>
+      <div class="testimonial" style="display:none;">
+        <p>"Professional, creative, and always delivers on time. Highly recommended! He will always be my go-to guy"</p>
+        <strong>- Ms. Millicent O. Narkie</strong>
+      </div>
+      <div class="testimonial" style="display:none;">
+        <p>"The social graphics were perfect for my campus business. The amount of attention my store received after I started posting the flyers is impressive."</p>
+        <strong>- Scanty Footwears</strong>
+      </div>
+      <button id="prevTestimonial" class="btn" style="margin-right:1rem;">Prev</button>
+      <button id="nextTestimonial" class="btn">Next</button>
+    </div>
+    <p>&copy; 2025 Samuel O. Nartey. All rights reserved.</p>
+  </footer>
+</body>
+</html>
