@@ -8,6 +8,10 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Dark mode toggle button -->
+  <button id="darkModeBtn" style="position:fixed; top:18px; right:18px; z-index:9999; background:#222; color:#fff; border:none; border-radius:50%; width:44px; height:44px; font-size:1.5em; cursor:pointer;">🌙</button>
+
+
   <header>
     <h1>Graphic Design Projects</h1>
     <a href="index.html" class="btn">Back to Portfolio</a>
@@ -126,4 +130,54 @@
     <p>&copy; 2025 Samuel O. Nartey. All rights reserved.</p>
   </footer>
 </body>
+
+<script>
+    // Dark mode toggle logic
+    const darkModeBtn = document.getElementById('darkModeBtn');
+    darkModeBtn.onclick = function() {
+      const isDark = document.body.classList.toggle('dark-mode');
+      if (isDark) {
+        darkModeBtn.textContent = "☀️";
+      } else {
+        darkModeBtn.textContent = "🌙";
+      }
+    };
+
+    // Optional: Add dark mode styles
+    const darkModeStyle = document.createElement('style');
+    darkModeStyle.innerHTML = `
+      body.dark-mode {
+        background: #181818 !important;
+        color: #f1f1f1 !important;
+      }
+      body.dark-mode header,
+      body.dark-mode footer {
+        background: #222 !important;
+        color: #f1f1f1 !important;
+      }
+      body.dark-mode .btn {
+        background: #444 !important;
+        color: #fff !important;
+      }
+      body.dark-mode input,
+      body.dark-mode textarea {
+        background: #222 !important;
+        color: #fff !important;
+        border-color: #444 !important;
+      }
+      body.dark-mode .project,
+      body.dark-mode .portfolio-category,
+      body.dark-mode .about,
+      body.dark-mode .services,
+      body.dark-mode .contact {
+        background: #232323 !important;
+        color: #f1f1f1 !important;
+      }
+      body.dark-mode .item-card {
+        background: #232323 !important;
+        color: #f1f1f1 !important;
+      }
+    `;
+    document.head.appendChild(darkModeStyle);
+  </script>
 </html>
