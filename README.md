@@ -1,15 +1,15 @@
- PERSONAL PORTFOLIO WEBSITE
+#PERSONAL PORTFOLIO WEBSITE
 
 Welcome to my personal portfolio website! This is a fully responsive website built using only HTML, CSS, and JavaScript to showcase my skills, projects, and background as a developer.
 
 
 
- ABOUT
+##ABOUT
 This portfolio was created to highlight who I am as a developer, showcase selected projects, and provide an easy way for potential employers or collaborators to contact me.
 
 
 
-TECH STACK
+###TECH STACK
 HTML5 – Semantic and accessible markup
 
 CSS – Custom styling with responsive design techniques
@@ -20,7 +20,7 @@ Deployment – GitHub Pages
 
 
 
-FEATURES
+####FEATURES
 Fully responsive design (mobile, tablet, desktop)
 
 Smooth scrolling and basic animations
@@ -39,16 +39,17 @@ No build steps or dependencies required — just a web browser.
 
 
 
-Optional Improvements
+#####Optional Improvements
  Add dark/light mode toggle
 
  Integrate with a backend to handle contact form submissions
 
  Add animations with JavaScript or CSS transitions
+ 
 
-📬 Contact
+######Contact
 Email: [legrandjnr@gmail.com]
 
 LinkedIn: [linkedin.com/in/yourname]
 
-GitHub: [github.com/LeGrand-Jnr]
+GitHub: [https://github.com/LeGrand-Jnr]
